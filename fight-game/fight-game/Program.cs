@@ -12,12 +12,8 @@ namespace fight_game
         {
             Character n = new Character();
             Console.WriteLine("Welcome to Fight Game\n\n");
-            Console.WriteLine("Player vs player");
-            Console.WriteLine("Player vs bot");
-            
-
-            n.OrcLord();
-
+            Console.WriteLine("2 player");
+            Console.WriteLine("1 player");
 
             Console.ReadLine();
         }
@@ -39,13 +35,15 @@ namespace fight_game
             int hp = 100;
             int str = 10;
             double suceed = 0.50;
+            Console.WriteLine("hp: " + hp + "\nstrenght: " + str + "\nattack hit succeed: " + suceed);
         }
 
         public void HumanLord()
         {
             int hp = 100;
             int str = 8;
-            double succed = 0.93;
+            double suceed = 0.93;
+            Console.WriteLine("hp: " + hp + "\nstrenght: " + str + "\nattack hit succeed: " + suceed);
         }
 
         public void DogLord()
@@ -53,13 +51,15 @@ namespace fight_game
             int hp = 100;
             int str = 11;
             double suceed = 0.47;
+            Console.WriteLine("hp: " + hp + "\nstrenght: " + str + "\nattack hit succeed: " + suceed);
         }
 
         public void CatLord()
         {
             int hp = 100;
             int str = 6;
-            double succed = 1.00;
+            double suceed = 1.00;
+            Console.WriteLine("hp: " + hp + "\nstrenght: " + str + "\nattack hit succeed: " + suceed);
         }
     }
 }
