@@ -19,7 +19,7 @@ namespace fight_game
             int count = 0;
             foreach (string choice in choices)
             {
-                Console.Write("[");
+                Console.Write("<<");
                 if (count == 0)
                 {
                     Console.BackgroundColor = ConsoleColor.White;
@@ -31,7 +31,7 @@ namespace fight_game
                 Console.BackgroundColor = ConsoleColor.Black;
                 Console.ForegroundColor = ConsoleColor.White;
 
-                Console.Write("]");
+                Console.Write(">>");
                 Console.SetCursorPosition(Console.CursorLeft + 3, Console.CursorTop);
 
                 count++;
