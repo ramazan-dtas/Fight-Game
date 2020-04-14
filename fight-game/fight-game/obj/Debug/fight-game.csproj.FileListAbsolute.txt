@@ -2,6 +2,5 @@ C:\Users\drama\OneDrive\Skrivebord\fight-game\fight-game\fight-game\bin\Debug\fi
 C:\Users\drama\OneDrive\Skrivebord\fight-game\fight-game\fight-game\bin\Debug\fight-game.exe
 C:\Users\drama\OneDrive\Skrivebord\fight-game\fight-game\fight-game\bin\Debug\fight-game.pdb
 C:\Users\drama\OneDrive\Skrivebord\fight-game\fight-game\fight-game\obj\Debug\fight-game.csprojAssemblyReference.cache
-C:\Users\drama\OneDrive\Skrivebord\fight-game\fight-game\fight-game\obj\Debug\fight-game.csproj.CoreCompileInputs.cache
 C:\Users\drama\OneDrive\Skrivebord\fight-game\fight-game\fight-game\obj\Debug\fight-game.exe
 C:\Users\drama\OneDrive\Skrivebord\fight-game\fight-game\fight-game\obj\Debug\fight-game.pdb
