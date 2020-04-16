@@ -21,11 +21,24 @@ namespace fight_game
             {
                 string character = Functionality.Select(new string[] { "Orc Lord", "Elf Lord", "Human Lord", "Dog Lord", "Cat Lord" });
 
-                if(character == "Orc Lord") { n.OrcLord(); }
-                if (character == "Elf Lord") { n.ElfLord(); }
-                if (character == "Human Lord") { n.HumanLord(); }
-                if (character == "Dog Lord") { n.DogLord(); }
-                if (character == "Cat Lord") { n.CatLord(); }
+                switch (character)
+                {
+                    case "Orc Lord":
+                        n.OrcLord();
+                        break;
+                    case "Elf Lord":
+                        n.ElfLord();
+                        break;
+                    case "Human Lord":
+                        n.HumanLord();
+                        break;
+                    case "Dog Lord":
+                        n.DogLord();
+                        break;
+                    case "Cat Lord":
+                        n.CatLord();
+                        break;
+                }
                 //Start of programs character it randomize it
                 Random rnd = new Random();
 
@@ -81,11 +94,8 @@ namespace fight_game
                         n.CatLord();
                         break;
                 }
-
-
                 Console.ReadKey();
                 Console.Clear();
-                
 
             }
             Console.ReadLine();

@@ -8,6 +8,7 @@ namespace fight_game
 {
     class Character
     {
+        
         public void OrcLord()
         {
             int hp = 100;
