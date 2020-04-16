@@ -12,9 +12,11 @@ namespace fight_game
         {
             Character n = new Character();
             Console.WriteLine("Welcome to Fight Game\n\n");
+            //User starts with choose if he/she wants to play 1 or 2 player
             string answer = Functionality.Select(new string[] { "1 Player", "2 Player" });
 
             Console.Clear();
+            //If user choosed 1player user will play against a random character that program has choosed 
             if (answer == "1 Player")
             {
                 string character = Functionality.Select(new string[] { "Orc Lord", "Elf Lord", "Human Lord", "Dog Lord", "Cat Lord" });
@@ -33,33 +35,59 @@ namespace fight_game
                 Console.WriteLine("Robot character: {0}", BotChar[BotIndex]);
                 
             }
-
+            //if user choosed 2 player that means it is 2 humans play against each other
             if(answer == "2 Player")
             {
                 Console.WriteLine("Player 1: ");
                 string character = Functionality.Select(new string[] { "Orc Lord", "Elf Lord", "Human Lord", "Dog Lord", "Cat Lord" });
-                if (character == "Orc Lord") { n.OrcLord(); }
-                if (character == "Elf Lord") { n.ElfLord(); }
-                if (character == "Human Lord") { n.HumanLord(); }
-                if (character == "Dog Lord") { n.DogLord(); }
-                if (character == "Cat Lord") { n.CatLord(); }
+                
+                switch(character)
+                {
+                    case "Orc Lord":
+                        n.OrcLord();
+                        break;
+                    case "Elf Lord":
+                        n.ElfLord();
+                        break;
+                    case "Human Lord":
+                        n.HumanLord();
+                        break;
+                    case "Dog Lord":
+                        n.DogLord();
+                        break;
+                    case "Cat Lord":
+                        n.CatLord();
+                        break;
+                }
                 
                 Console.WriteLine("\nPlayer 2: ");
                 string character1 = Functionality.Select(new string[] { "Orc Lord", "Elf Lord", "Human Lord", "Dog Lord", "Cat Lord" });
 
-                if (character1 == "Orc Lord") { n.OrcLord(); }
-                if (character1 == "Elf Lord") { n.ElfLord(); }
-                if (character1 == "Human Lord") { n.HumanLord(); }
-                if (character1 == "Dog Lord") { n.DogLord(); }
-                if (character1 == "Cat Lord") { n.CatLord(); }
+                switch (character1)
+                {
+                    case "Orc Lord":
+                        n.OrcLord();
+                        break;
+                    case "Elf Lord":
+                        n.ElfLord();
+                        break;
+                    case "Human Lord":
+                        n.HumanLord();
+                        break;
+                    case "Dog Lord":
+                        n.DogLord();
+                        break;
+                    case "Cat Lord":
+                        n.CatLord();
+                        break;
+                }
+
 
                 Console.ReadKey();
                 Console.Clear();
-
                 
+
             }
-
-
             Console.ReadLine();
         }
     }
