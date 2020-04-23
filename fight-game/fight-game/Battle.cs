@@ -72,4 +72,3 @@ namespace fight_game
         }
     }
 }   
-
