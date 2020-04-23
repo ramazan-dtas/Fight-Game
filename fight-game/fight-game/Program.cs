@@ -113,10 +113,6 @@ namespace fight_game
 
             }
             Console.ReadLine();
-
-    
-            Console.ReadLine();
-
         }
         
     }

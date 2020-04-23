@@ -50,10 +50,7 @@ namespace fight_game
 
             // Print out info on who attacked who and for how
             // much damage
-            Console.WriteLine("{0} Attacks {1} and Deals {2} Damage",
-                warriorA.Name,
-                warriorB.Name,
-                dmg2WarB);
+            Console.WriteLine("{0} Attacks {1} and Deals {2} Damage",warriorA.Name,warriorB.Name,dmg2WarB);
 
             // Provide output on the change to health
             Console.WriteLine("{0} Has {1} Health\n",

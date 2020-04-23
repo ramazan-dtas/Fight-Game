@@ -41,41 +41,10 @@ namespace fight_game
         {
             Console.WriteLine("\nhp: " + Hp + "\nstrenght: " + AttkMax + "\n");
         }
-        /*
-        public void Fight(String f1, String f2)
-        {
-            Console.WriteLine(f1 + " " + f2);
-            Console.ReadKey();
-            Console.Clear();
-
-            Console.SetCursorPosition(0, 0);
-            Console.Write(f1);
-            
-            Console.SetCursorPosition(100, 0);
-            Console.Write(f2);
-
-            var elfLord = new Stats { Name = "Elf Lord", MaxHp = 100, Strength = 10 };
-            var dogLord = new Stats { Name = "Dog Lord", MaxHp = 50, Strength = 4 };
-
-        }
-        
-        public Warrior(string name = "Warrior",
-            double health = 0,
-            double attkMax = 0,
-            double blockMax = 0)
-        {
-            
-            Hp = health;
-            AttkMax = attkMax;
-            BlockMax = blockMax;
-        }*/
 
         Random rnd = new Random();
 
-        public Character(string name = "Warrior",
-            double health = 100,
-            double attkMax = 15,
-            double blockMax = 10)
+        public Character(string name = "Warrior",double health = 100,double attkMax = 15,double blockMax = 10)
         {
             Name = name;
             Hp = health;
