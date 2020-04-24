@@ -35,22 +35,22 @@ namespace fight_game
         public static string GetAttackResult(Character warriorA, Character warriorB)
         {
             // Calculate one Warriors attack and the others block
-            double warAAttkAmt = warriorA.Attack();
-            double warBBlkAmt = warriorB.Block();
+            double warAttack = warriorA.Attack();
+            double warBlock = warriorB.Block();
 
             // Subtract block from attack
-            double dmg2WarB = warAAttkAmt - warBBlkAmt;
+            double Block = warAttack - warBlock;
 
             // If there was damage subtract that from the health
-            if (dmg2WarB > 0)
+            if (Block > 0)
             {
-                warriorB.Hp = warriorB.Hp - dmg2WarB;
+                warriorB.Hp = warriorB.Hp - Block;
             }
-            else dmg2WarB = 0;
+            else Block = 0;
 
             // Print out info on who attacked who and for how
             // much damage
-            Console.WriteLine("{0} Attacks {1} and Deals {2} Damage",warriorA.Name,warriorB.Name,dmg2WarB);
+            Console.WriteLine("{0} Attacks {1} and Deals {2} Damage",warriorA.Name,warriorB.Name,Block);
 
             // Provide output on the change to health
             Console.WriteLine("{0} Has {1} Health\n",
